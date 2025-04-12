@@ -1,1 +1,1 @@
-# practica-backend
+Proyecto Ecommerce de indumentaria 
