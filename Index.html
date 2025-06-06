@@ -3,18 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Ecommerce</title>
+    <title>Mi Tienda de Ropa</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body>
-    <h1>Catálogo de Prendas</h1>
-    <div id="catalogo"></div>
-    <button id="finalizar">Finalizar compra</button>
-    <button id="vaciar">Vaciar carrito</button>
+    <header>
+      <h1>Mi Tienda de Ropa</h1>
+      <div id="carrito-header"></div>
+    </header>
 
-    <h2>Carrito</h2>
-    <div id="carrito"></div>
-    <div id="total"></div>
+    <main>
+      <section id="catalogo-section">
+        <h2>Catálogo de Prendas</h2>
+        <div id="catalogo"></div>
+      </section>
 
-    <script src="./Ecommerce.js"></script>
+      <aside id="carrito-sidebar">
+        <h2>🛒 Carrito</h2>
+        <div id="carrito"></div>
+        <div id="total"></div>
+        <button id="finalizar">Ver carrito</button>
+        <button id="vaciar">Vaciar carrito</button>
+      </aside>
+    </main>
+
+    <script src="./ecommerce.js"></script>
   </body>
 </html>

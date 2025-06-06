@@ -1,0 +1,144 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #41f300;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+#carrito-header {
+  font-size: 18px;
+}
+
+main {
+  display: flex;
+  padding: 20px;
+}
+
+#catalogo-section {
+  flex: 2;
+  margin-right: 20px;
+}
+
+#catalogo .producto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+#catalogo .producto button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#catalogo .producto button:hover {
+  background-color: #2980b9;
+}
+
+#carrito-sidebar {
+  flex: 1;
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 20px;
+}
+
+#carrito-sidebar h2 {
+  margin-top: 0;
+}
+
+#carrito-sidebar button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#finalizar {
+  background-color: #28a745;
+}
+
+#finalizar:hover {
+  background-color: #218838;
+}
+
+#vaciar {
+  background-color: #dc3545;
+}
+
+#vaciar:hover {
+  background-color: #c82333;
+}
+
+#carrito-formulario {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  width: 100vw; 
+  height: calc(100vh - 60px); 
+  box-sizing: border-box;
+}
+
+#carrito-formulario-productos {
+  flex: 1; 
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 20px;
+  overflow-y: auto; 
+}
+
+#carrito-formulario-envio {
+  flex: 2;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#carrito-formulario-productos h2,
+#carrito-formulario-envio h3 {
+  margin-top: 0;
+}
+
+#form-envio input[type="text"],
+#form-envio input[type="email"] {
+  max-width: 600px;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
